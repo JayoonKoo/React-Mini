@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Cart = (props) => {
+const Cart = props => {
   return (
     <div>
       <h2>장바구니</h2>

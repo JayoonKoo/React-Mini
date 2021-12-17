@@ -1,20 +1,20 @@
-import { Route } from "react-router-dom";
-import Header from "../route/Header";
-import Footer from "../route/Footer";
-import "bootstrap/dist/css/bootstrap.css";
-import "../css/toy.css";
+import {Route} from 'react-router-dom';
+import Header from '../route/Header';
+import Footer from '../route/Footer';
+import 'bootstrap/dist/css/bootstrap.css';
+import '../css/toy.css';
 
-import Board from "../component/board/Board";
-import Login from "../component/login/Login";
-import Register from "../component/register/Register";
-import Product from "../component/product/Product";
-import Cart from "../component/cart/Cart";
-import History from "../component/history/History";
-import Naver from "./naver/Naver";
-import { useState } from "react";
+import Board from '../component/board/Board';
+import Login from '../component/login/Login';
+import Register from '../component/register/Register';
+import Product from '../component/product/Product';
+import Cart from '../component/cart/Cart';
+import History from '../component/history/History';
+import Naver from './naver/Naver';
+import {useState} from 'react';
 
 function App() {
-  const [userId, setUserId] = useState("");
+  const [userId, setUserId] = useState('');
 
   return (
     <div className="App">

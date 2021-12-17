@@ -24,12 +24,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:prettier/recommended"
     ]
   },
   "browserslist": {
@@ -44,5 +46,11 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://54.180.63.177:5001"
+  "proxy": "http://54.180.63.177:5001",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "redux-devtools-extension": "^2.13.9"
+  }
 }

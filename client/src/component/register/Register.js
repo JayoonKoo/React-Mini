@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Register = (props) => {
+const Register = props => {
   return (
     <div>
       <h2>회원가입</h2>

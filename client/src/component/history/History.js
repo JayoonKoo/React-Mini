@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const History = (props) => {
+const History = props => {
   return (
     <div>
       <h2>사용자 구매내역</h2>

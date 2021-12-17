@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Product = (props) => {
+const Product = props => {
   return (
     <div>
       <h2>상품</h2>
