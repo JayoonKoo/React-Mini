@@ -10,6 +10,22 @@ export function createReducer(actions, key) {
   };
 }
 
-// export function createAsyncThunk {
-
-// }
+export function createAsyncThunk(
+  asyncActionCreator,
+  promiseCreator,
+  additional,
+) {
+  return (...params) => {
+    return async (dispatch, getState) => {
+      const {pending, success, fail} = asyncActionCreator;
+      dispatch(pending());
+      try {
+        const result = await promiseCreator(...params);
+        additional && additional(dispatch, getState);
+        dispatch(success(result));
+      } catch (error) {
+        dispatch(fail(error));
+      }
+    };
+  };
+}
