@@ -1,10 +1,12 @@
+import BoardListContainer from 'containers/Board/BoardListContainer';
 import React from 'react';
+import {Container} from 'reactstrap';
 
 const Board = props => {
   return (
-    <div>
-      <h2>게시판</h2>
-    </div>
+    <Container>
+      <BoardListContainer />
+    </Container>
   );
 };
 
